@@ -26,11 +26,11 @@ public class OutputRunable {
 		//write
 		try {
 		
-			PrintWriter pw = new PrintWriter(new FileWriter(file,true));
+			PrintWriter pw = new PrintWriter(file);
 			String ori = "test message";
 			
-			pw.write(ori); //write to RAM
-			
+			pw.println(ori); //write to RAM
+			pw.println("line");
 			pw.flush(); //output to text
 			
 		} catch (FileNotFoundException e) {
