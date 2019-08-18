@@ -1,6 +1,6 @@
 package midTermTest3;
 
-public class Person{
+public class Person extends Thread{
 	private String name;
 	
 	Person(String name){
@@ -10,5 +10,8 @@ public class Person{
 	public void wellcome() {
 		System.out.println(this.name+"Wellcome!");
 	}	
-
+        @Override
+        public void run(){
+            wellcome();
+        }
 }

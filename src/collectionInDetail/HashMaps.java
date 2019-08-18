@@ -2,7 +2,7 @@ package collectionInDetail;
 
 import java.util.HashMap;
 
-public class HashSetRunable {
+public class HashMaps {
 
 	public static void main(String ages[]) {
 		Student s1 = new Student (1,"nameA");

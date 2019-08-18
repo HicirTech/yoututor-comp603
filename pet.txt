@@ -1,0 +1,1 @@
+{Tom=Dog [name=Tom, petType=Dog], Peter=Dog [name=Peter, petType=Dog], Jerry=Cat [name=Jerry, petType=Cat], Ajax=Dog [name=Ajax, petType=Dog]}

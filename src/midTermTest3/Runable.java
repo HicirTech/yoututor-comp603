@@ -12,8 +12,8 @@ public class Runable{
 		Person p2 = new Person("p2");
 		Person p3 = new Person("p3");
 		
-		p1.wellcome();
-		p2.wellcome();
-		p3.wellcome();
+		p1.start();
+                p2.start();
+                p3.start();
 	}
 }

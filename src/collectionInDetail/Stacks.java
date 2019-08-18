@@ -3,7 +3,7 @@ package collectionInDetail;
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class HashMapRunable {
+public class Stacks {
 
 	public static void main(String ages[]) {
 		String someString = "abcde";

@@ -2,7 +2,7 @@ package collectionInDetail;
 
 import java.util.HashSet;
 
-public class StackRunable {
+public class HashSets {
 
 	public static void main(String ages[]) {
 		Student s1 = new Student (1,"nameA");

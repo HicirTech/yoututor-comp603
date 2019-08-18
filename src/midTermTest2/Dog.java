@@ -5,8 +5,8 @@ public class Dog extends Pets{
 	private String name;
 	private String petType;
 	Dog(String name, String petType){
-		this.setName(name);
-		this.setPetType(petType);
+		this.name=name;
+                this.petType=petType;
 	}
 	public void action() {
 		System.out.println("bak!");
