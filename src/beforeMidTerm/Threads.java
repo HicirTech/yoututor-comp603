@@ -5,6 +5,9 @@
  */
 package beforeMidTerm;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author luoze
@@ -32,6 +35,11 @@ public class Threads extends Thread{
     }
     
     public void run(){
+        try {
+            sleep(300);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Threads.class.getName()).log(Level.SEVERE, null, ex);
+        }
         printMessage();
     }
 }

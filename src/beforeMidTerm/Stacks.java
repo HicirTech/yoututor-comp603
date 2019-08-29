@@ -41,6 +41,7 @@ public class Stacks {
         for(String s : list){
             stack.push(s);
         }
+
         ArrayList<String> target = new ArrayList<>();
         while(!stack.empty()){
             target.add(stack.pop());

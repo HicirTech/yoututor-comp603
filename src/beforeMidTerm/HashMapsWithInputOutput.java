@@ -29,9 +29,9 @@ public class HashMapsWithInputOutput {
              1. load file
              2. HashMap to store the result with K/V pair
              3. output to the result.txt
-                3.1 printWriter
-                3.2 get all data in the map
-                3.3 output to file
+             3.1 printWriter
+             3.2 get all data in the map
+             3.3 output to file
              */
             Scanner fileReader = new Scanner(new File("Result.txt"));
             HashMap<String, Integer> map = new HashMap<>();
@@ -42,29 +42,41 @@ public class HashMapsWithInputOutput {
             System.out.println(map);
 
             Scanner sc = new Scanner(System.in);
+//            Scanner sc = null;
             do {
                 System.out.println("Please input name");
                 String name = sc.nextLine();
                 System.out.println("Please input result");
-                int result = Integer.parseInt(sc.nextLine());
+                int result;
+                try {
+                    result = getUserResultInput();
+                } catch (NumberFormatException e) {
+                    System.out.println("Input error, this is not a number, try again");
+                    continue;
+                }
                 map.put(name, result);
-                
+
                 System.out.println("Do you want to add another one? [y/n]");
                 if (sc.nextLine().toUpperCase().charAt(0) == 'N') {
                     break;
                 }
             } while (true);
-            
-         //   System.out.println(map);
+
+            //   System.out.println(map);
             PrintWriter pw = new PrintWriter(new File("Result.txt"));
-            
-            for(String key : map.keySet()){
-                pw.println(key+":"+map.get(key));
+
+            for (String key : map.keySet()) {
+                pw.println(key + ":" + map.get(key));
             }
-            pw.flush();          
-            
+            pw.flush();
+
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HashMapsWithInputOutput.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    public static int getUserResultInput() throws NumberFormatException {
+        Scanner sc = new Scanner(System.in);
+        return Integer.parseInt(sc.nextLine());
     }
 }
