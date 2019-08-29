@@ -1,4 +1,4 @@
+Ramond:30
+Ajex:45
 Mark:25
 Jason:27
-Ramond:29
-name:28
