@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Sep 20 10:03:16 NZST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-016d-4b8d-063a-00000e9fadf8 
+on database directory C:\Users\luoze\Documents\GitHub\yoututor-comp603\COMP603DB with class loader sun.misc.Launcher$AppClassLoader@2a139a55 
+Loaded from file:/C:/Users/luoze/Documents/GitHub/yoututor-comp603/Driver/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_221-b11
+user.dir=C:\Users\luoze\Documents\GitHub\yoututor-comp603
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
