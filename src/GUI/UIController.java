@@ -30,22 +30,21 @@ public class UIController {
 				sb.addActionListener(new ActionListener() {
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						handleUpdate(sb);
+						int[] checker = stringToXY(sb.toString());						
+						g.getBlocks()[checker[0]][checker[1]].setType(isO?BlockType.o:BlockType.x);
+						sb.setText(g.getBlocks()[checker[0]][checker[1]].toString());
+						isO=!isO;
 					}
 
 				});
 			}
 		}
 	}
+	private int[] stringToXY(String check) {
+		int x = Integer.parseInt(check.split(",")[1]);
+		int y = Integer.parseInt(check.split(",")[2]);
+		return new int[] { x / 50, y / 50 };
 
-	public void handleUpdate(JButton sb) {
-		int[] location = stringToXY(sb.toString());
-		System.out.println(Arrays.toString(location));
-		g.mark(location[0], location[1], isO ? BlockType.o : BlockType.x);
-		isO = !isO;
-		System.out.print(g);
-		uif.forceUpdate();
 	}
-
 
 }
