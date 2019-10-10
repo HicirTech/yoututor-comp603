@@ -22,5 +22,6 @@
 	<classpathentry kind="lib" path="C:/Users/luoze/Documents/GitHub/yoututor-comp603/Driver/derbyrun.jar"/>
 	<classpathentry kind="lib" path="C:/Users/luoze/Documents/GitHub/yoututor-comp603/Driver/derbytools.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/Users/luoze/Documents/GitHub/yoututor-comp603/Driver/mysql-connector-java-5.1.48.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
